@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Translation"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "UIKit & UIFoundation"
   s.description  = "UIKit & UIFoundation Category"
   s.homepage     = "https://github.com/ichitech/translation"
