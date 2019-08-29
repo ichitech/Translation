@@ -1,0 +1,38 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - PINCache (2.3)
+  - Translation (1.0):
+    - AFNetworking
+    - PINCache
+
+DEPENDENCIES:
+  - Translation
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - PINCache
+    - Translation
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  Translation: 06b633d9bc259390ccb5cf1995214084a5274a77
+
+PODFILE CHECKSUM: 97efe0798368b7b4279ef0533d795d202731089c
+
+COCOAPODS: 1.7.5
