@@ -5,10 +5,7 @@ Translation
 ![Platforms](https://cocoapod-badges.herokuapp.com/p/Translation/badge.png)
 [![Cocoapod Latest Version](http://img.shields.io/cocoapods/v/Translation.svg?style=flat)](https://cocoapods.org/?q=Translation)
 
-## Translation
-
 A simple iOS library for Google translation APIs.
-
 
 ## Quick Start (Google)
 
