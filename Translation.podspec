@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ichitech/translation.git", :tag => s.version.to_s }
   s.weak_frameworks = "UIKit", "Foundation"
   s.vendored_framework = 'Translation.framework'
-  s.resource     = 'Translation.framework/Versions/A/Resources/Translation.bundle'
+  #s.resource     = 'Translation.framework/Versions/A/Resources/Translation.bundle'
   s.requires_arc = true
   s.dependency 'AFNetworking'
   s.dependency 'PINCache'
