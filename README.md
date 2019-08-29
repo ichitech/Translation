@@ -223,8 +223,10 @@ var quotaUser: String?
 func cancel() -> Void
 ```
 
-## Attributions
+## Contact
+Have a question or an issue about Translation? Create an [issue](https://github.com/ichitech/Translation/issues/new)!
 
+## Attributions
 Translation uses the following projects:
 
 - [PINCache](https://github.com/nicklockwood/XMLDictionary)
@@ -232,7 +234,7 @@ Translation uses the following projects:
 	- I also cribbed some parts of the README. Great job explaining CocoaPods usage guys!
 	
 ## License
-
 Translation is available under the MIT license. See the LICENSE file for more info.
 
-
+## Inspiration
+Inspired by [FGTranslator](https://github.com/gpolak/FGTranslator) :point_left: :100:
