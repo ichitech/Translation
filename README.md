@@ -1,37 +1,19 @@
-ICTKit
+Translation
 ============
 
-![License](https://cocoapod-badges.herokuapp.com/l/ICTKit/badge.(png|svg))
-![Platforms](https://cocoapod-badges.herokuapp.com/p/ICTKit/badge.png)
-[![Cocoapod Latest Version](http://img.shields.io/cocoapods/v/ICTKit.svg?style=flat)](https://cocoapods.org/?q=ICTKit)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![License](https://cocoapod-badges.herokuapp.com/l/Translation/badge.(png|svg))
+![Platforms](https://cocoapod-badges.herokuapp.com/p/Translation/badge.png)
+[![Cocoapod Latest Version](http://img.shields.io/cocoapods/v/Translation.svg?style=flat)](https://cocoapods.org/?q=Translation)
 
-## FGTranslator
+## Translation
 
-A simple iOS library for Google & Bing translation APIs.
+A simple iOS library for Google translation APIs.
 
 
 ## Quick Start (Google)
 
 ```objective-c
 FGTranslator *translator = [[FGTranslator alloc] initWithGoogleAPIKey:@"your_google_key"];
-
-[translator translateText:@"Bonjour!" 
-               completion:^(NSError *error, NSString *translated, NSString *sourceLanguage)
-{
-	if (error)
-    	NSLog(@"translation failed with error: %@", error);
-	else
-		NSLog(@"translated from %@: %@", sourceLanguage, translated);
-}];
-```
-
-## Quick Start (Bing)
-
-```objective-c
-FGTranslator *translator =
-	[[FGTranslator alloc] initWithBingAzureClientId:@"your_azure_client_id"
-											 secret:@"your_azure_client_secret"];
 
 [translator translateText:@"Bonjour!" 
                completion:^(NSError *error, NSString *translated, NSString *sourceLanguage)
@@ -65,21 +47,6 @@ pod "FGTranslator"
 Alternatively you can directly add the *FGTranslator* folder to your project. FGTranslator uses [AFNetworking](https://github.com/AFNetworking/AFNetworking) - your project needs this for it to work if you include it this way. CocoaPods install manages this dependency for you.
 
 
-## Register With Google or Bing
-
-To use this library you need a valid Google or Bing (Azure) developer account.
-
-Google and Bing Translate are both paid services, but Bing offers a free tier. Google's translation quality and language selection is generally better. Pick what works best for you.
-
-- **Google**
-  1. https://developers.google.com/translate/v2/getting_started
-- **Bing** 
-  1. Subscribe to the Microsoft Translator API on [Azure Marketplace](http://go.microsoft.com/?linkid=9782667). Basic subscriptions, up to 2 million characters a month, are free.
-  2. To register your application with Azure DataMarket, visit https://datamarket.azure.com/developer/applications/ using the LiveID credentials from step 1, and click on “Register”. In the “Register your application” dialog box, you can define your own Client ID and Name. The redirect URI is not used for the Microsoft Translator API. However, the redirect URI field is a mandatory field, and you must provide a URI to obtain the access code (just use *http://example.com* to make it happy). 
-Take a note of the **client ID** and the **client secret** value.
-  3. Make sure you have an [Active Subscription](https://datamarket.azure.com/dataset/bing/microsofttranslator) data plan. The first tier (2M characters) is free.
-
-
 ## Usage
 
 ### Initialize with Google...
@@ -87,14 +54,6 @@ Take a note of the **client ID** and the **client secret** value.
 ```objective-c
 FGTranslator *translator =
 	[[FGTranslator alloc] initWithGoogleAPIKey:@"your_google_key"];
-```
-
-### ...or Bing
-
-```objective-c
-FGTranslator *translator =
-	[[FGTranslator alloc] initWithBingAzureClientId:@"your_azure_client_id"
-                                             secret:@"your_azure_client_secret"];
 ```
 
 ### Translate
@@ -199,42 +158,18 @@ For Google Translate, you can throttle usage on a per-user/device basis by setti
 ```objective-c
 - (void)cancel;
 ```
-### Flush Cache
 
-Translations are cached to prevent unnecessary network calls (and Google/Bing API charges). You can flush the cache if needed:
-```objective-c
-+ (void)flushCache;
-```
-	
-### Flush Credentials *(Bing Only)*
-
-Bing Translate uses token-based authentication. The first call you make retrieves a token based on the passed-in client ID and secret and caches it for future use. The lifetime of the token is 15 minutes, after which it expires and a new one will be fetched. To force the token expiry, call the following function:
-```objective-c
-+ (void)flushCredentials;
-```
-	
 
 ## Attributions
 
 FGTranslator uses the following projects:
 
-- [XMLDictionary](https://github.com/nicklockwood/XMLDictionary)
-- [AFNetworking](https://github.com/AFNetworking/AFNetworking)
+- [PINCache](https://github.com/nicklockwood/XMLDictionary)
+- [AFNetworking](https://github.com/pinterest/PINCache)
 	- I also cribbed some parts of the README. Great job explaining CocoaPods usage guys!
 	
 ## License
 
-FGTranslator is available under the MIT license. See the LICENSE file for more info.
-
-
-## Misc
-
-### FG?
-
-FGTranslator comes from my [Fargate](http://fargate.net) app.
-
-### Fish Logo?
-
-[Fish logo.](http://en.wikipedia.org/wiki/Babel_fish_\(The_Hitchhiker%27s_Guide_to_the_Galaxy\)#Babel_fish)
+Translation is available under the MIT license. See the LICENSE file for more info.
 
 
