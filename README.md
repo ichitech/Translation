@@ -4,6 +4,10 @@ Translation
 ![License](https://cocoapod-badges.herokuapp.com/l/Translation/badge.(png|svg))
 ![Platforms](https://cocoapod-badges.herokuapp.com/p/Translation/badge.png)
 [![Cocoapod Latest Version](http://img.shields.io/cocoapods/v/Translation.svg?style=flat)](https://cocoapods.org/?q=Translation)
+<a href="https://developer.apple.com/xcode">
+  <img src="https://img.shields.io/badge/Xcode-10-green.svg"
+      alt="Xcode">
+</a>
 
 A simple iOS library for Google translation APIs.
 
