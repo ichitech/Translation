@@ -2,7 +2,7 @@
  @header    ICTTranslation.h
  @abstract  Translation iOS SDK Source
  @copyright Copyright 2019 IchiTech. All rights reserved.
- @version   1.0
+ @version   1.1
  */
 
 #import <Foundation/Foundation.h>
@@ -17,8 +17,7 @@ typedef NSInteger ICTTranslationError;
 /**
  * ICTTranslation specific error
  */
-enum ICTTranslationError
-{
+enum ICTTranslationError {
     ICTTranslationErrorUnableToTranslate = 0,
     ICTTranslationErrorNetworkError = 1,
     ICTTranslationErrorSame = 2,
@@ -102,7 +101,7 @@ typedef void (^ICTTranslationCompletionHandler)( NSError * _Nullable error, NSSt
  * Return a list of languages supported by either the Google or Bing service.
  * @param completion completion handler
  */
-- (void)supportedLanguages:(void (^)(NSError *error, NSArray *languageCodes))completion NS_SWIFT_NAME(supportedLanguages(_:)) API_AVAILABLE(ios(8.0));
+- (void)supportedLanguages:(void (^)(NSError * _Nullable error, NSArray * _Nullable languageCodes))completion NS_SWIFT_NAME(supportedLanguages(_:)) API_AVAILABLE(ios(8.0));
 
 /**
  * Cancels the current translation.

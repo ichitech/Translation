@@ -1,8 +1,8 @@
 /*!
- @header    Kit.h
- @abstract  ICTKit iOS SDK Source
- @copyright Copyright 2013 IchiTech. All rights reserved.
- @version   12.2
+ @header    Translation.h
+ @abstract  Translation iOS SDK Source
+ @copyright Copyright 2019 IchiTech. All rights reserved.
+ @version   1.1
  */
 
 #import <Translation/ICTTranslation.h>
