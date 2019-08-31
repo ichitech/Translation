@@ -60,6 +60,21 @@ Alternatively you can directly add the *Translation* folder to your project. Tra
 
 ## Usage
 
+### Import to your project
+
+#### Objective-C
+```objective-c
+
+#import <Translation/Translation.h>
+```
+
+#### Swift
+##### Please import to the Swift Bridging Header file. Folow [some steps](https://mycodetips.com/ios/manually-adding-swift-bridging-header-1290.html) to create this file.
+```swift
+
+#import <Translation/Translation.h>
+```
+
 ### Initialize with Google...
 
 #### Objective-C
