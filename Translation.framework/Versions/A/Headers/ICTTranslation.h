@@ -2,7 +2,7 @@
  @header    ICTTranslation.h
  @abstract  Translation iOS SDK Source
  @copyright Copyright 2019 IchiTech. All rights reserved.
- @version   1.1
+ @version   1.2
  */
 
 #import <Foundation/Foundation.h>

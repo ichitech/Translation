@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         langs.supportedLanguages { (error, langs) in
             print(langs as Any)
         }
+        
+        NSStringFromClass(String.self)
     }
 }
 
